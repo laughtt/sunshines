@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_sunshine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jose.sunshines.sunshine"
+    tools:showIn="@layout/activity_sunshine">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4"
+        android:background="@color/colorPrimary">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/TxtFecha"
+                android:text="Today , june 21"
+                android:textSize="20sp"
+                android:elevation="1dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="111dp"
+                android:id="@+id/TxtGrados"
+                android:text="21"
+                android:textSize="80sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtGrados2"
+                android:text="13"
+                android:textSize="40sp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtTiempo"
+                android:text="Clouds"
+                android:textAlignment="center"
+                android:paddingTop="20px"
+                android:textSize="20sp"
+
+                android:layout_marginTop="92dp" />
+
+            <ImageView
+                android:layout_height="64dp"
+                android:src="@drawable/nube"
+                android:layout_width="match_parent"
+                android:id="@+id/Imgclima"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+        android:layout_weight="6">
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ListPrincipal" />
+    </LinearLayout>
+
+
+</LinearLayout>
